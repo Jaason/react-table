@@ -1,17 +1,21 @@
-import { useState } from 'react';
+import React, {useState} from 'react';
 
-export default function useTable(getColumns: object) {
+export default function CustomTable(getData: object) {
 
-    const [columns, setColumns] = useState({});
-    const [data, setData] = useState(null);
+  const [columns, setColumns] = useState({});
+  const [data, setData] = useState(null);
 
-    const getTableProps = () => {
-        console.log("getTableProps");
-    }
+  const getTableProps = () => {
+    return "dupa1";
+  };
 
-    const getTableBodyProps = () => {
-        console.log("getTableBodyProps");
-    }
+  const getTableBodyProps = () => {
+   return "dupa2";
+  };
 
-    return columns;
+  return [
+    getTableProps,
+    getTableBodyProps
+  ];
+
 }

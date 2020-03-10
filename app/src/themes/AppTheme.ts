@@ -1,4 +1,4 @@
-const AppTheme: {[id: string]: any} = {
+const AppTheme: { [id: string]: any } = {
   light: {
     textColor: "#000",
     backgroundColor: "#fff"
