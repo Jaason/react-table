@@ -1,16 +1,16 @@
 import React, {useState} from 'react';
 
-export default function CustomTable(getData: object) {
+export default function useTable(getData: object) {
 
   const [columns, setColumns] = useState({});
   const [data, setData] = useState(null);
 
   const getTableProps = () => {
-    return "dupa1";
+    return "table prop";
   };
 
   const getTableBodyProps = () => {
-   return "dupa2";
+   return "body prop";
   };
 
   return [
